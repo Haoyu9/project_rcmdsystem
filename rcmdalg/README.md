@@ -29,7 +29,7 @@
 2. 使用sqoop将数据导入到mysql中：
 ```
 sqoop export  \
- --connect "jdbc:mysql://gp-bd-master01:3306/rcmd_result?useUnicode=true&characterEncoding=utf-8"\
+ --connect "jdbc:mysql://master01:3306/rcmd_result?useUnicode=true&characterEncoding=utf-8"\
  --username root \
  --password pwd@9pD8 \
  --table alg_topn_movie \
@@ -56,7 +56,7 @@ sqoop export  \
 3. 使用sqoop将数据导入到mysql中：
 ```
 sqoop export  \
- --connect "jdbc:mysql://gp-bd-master01:3306/rcmd_result?useUnicode=true&characterEncoding=utf-8"\
+ --connect "jdbc:mysql://master01:3306/rcmd_result?useUnicode=true&characterEncoding=utf-8"\
  --username root \
  --password pwd@9pD8 \
  --table alg_related_movie \
@@ -83,7 +83,7 @@ spark2-submit --master yarn-client --class com.gupao.bd.sample.rcmd.algr.ItemBas
 3. 使用sqoop将数据导入到mysql中：
 ```
 sqoop export  \
- --connect "jdbc:mysql://gp-bd-master01:3306/rcmd_result?useUnicode=true&characterEncoding=utf-8"\
+ --connect "jdbc:mysql://master01:3306/rcmd_result?useUnicode=true&characterEncoding=utf-8"\
  --username root \
  --password pwd@9pD8 \
  --table alg_ibcf_movie_similarity \
